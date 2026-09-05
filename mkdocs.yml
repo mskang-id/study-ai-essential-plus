@@ -1,0 +1,42 @@
+site_name: AI Essential Plus 교육 노트
+site_description: AI Essential Plus 교육 중 질문과 학습 내용을 정리한 개인 노트
+site_url: https://mskang-id.github.io/study-ai-essential-plus/
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+
+nav:
+  - 홈: index.md
+  - 키워드 모음: keywords.md
+  - 이론:
+      - 모델과 파라미터: theory/model-parameter.md
+      - Context: theory/context.md
+      - Fine-tuning과 RAG: theory/finetuning-rag.md
+      - Attention과 Transformer: theory/attention-transformer.md
+      - Agent와 ReAct: theory/agent-react.md
+      - GPU와 메모리: theory/gpu-memory.md
+  - 실습: practice.md
+  - 노트: notes.md
+  - 응용: applications.md
+  - 시험: exam.md
